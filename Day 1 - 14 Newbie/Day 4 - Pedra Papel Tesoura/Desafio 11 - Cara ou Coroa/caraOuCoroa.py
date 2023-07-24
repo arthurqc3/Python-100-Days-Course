@@ -1,3 +1,5 @@
+# Programa baseado no jogo Cara ou Coroa
+
 import random
 
 def verificar(resposta):

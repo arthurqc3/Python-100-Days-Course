@@ -1,3 +1,5 @@
+# Programa que faz uma lista de nomes para escolher uma pessoa para pagar a conta
+
 # Import the random module here
 import random
 # Split string method

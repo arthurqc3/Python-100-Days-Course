@@ -1,3 +1,6 @@
+# Programa baseado em um antigo jogo onde usando as palavras TRUE LOVE se calcula a porcentagem
+# de amor entre duas pessoas
+
 # 🚨 Don't change the code below 👇
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
