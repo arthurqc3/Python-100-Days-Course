@@ -1,5 +1,3 @@
-# Programa para esconder um tesouro em determinado espaço da matriz
-
 # 🚨 Don't change the code below 👇
 row1 = ["⬜️","️⬜️","️⬜️"]
 row2 = ["⬜️","⬜️","️⬜️"]

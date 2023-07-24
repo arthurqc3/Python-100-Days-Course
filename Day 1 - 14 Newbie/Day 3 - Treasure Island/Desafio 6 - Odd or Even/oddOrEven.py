@@ -1,5 +1,3 @@
-# Programa que mostra se o numero digitado é par ou Impar
-
 # 🚨 Don't change the code below 👇
 number = int(input("Which number do you want to check? "))
 # 🚨 Don't change the code above 👆
