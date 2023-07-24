@@ -1,2 +1,2 @@
 # Python-100-Days-Course
- Compilador de Exercicios e Projetos com Python!
+Compilado de Exercicios e Projetos dos Níveis mais Básicos aos mais Complexos usando Python
