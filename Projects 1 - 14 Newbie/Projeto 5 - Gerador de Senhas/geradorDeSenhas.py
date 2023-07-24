@@ -9,10 +9,30 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-#Eazy Level - Order not randomised:
-#e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+password = []
+contador = 0
+for caracter in letters:                                 # adiciona as letras a lista "password"
+    aleatorio = random.randint(0, len(letters) - 1)      # baseado em um int aleatorio e no seu numero de elementos
+    if contador < nr_letters:                            # casuamente dava erro "list index out of range"
+        password.append(letters[aleatorio])              # resolvido ao colocar - 1 no range do randint
+        contador += 1
+        
+contador = 0
 
-#Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+for caracter in numbers:                                 # adiciona os numeros a lista "password"
+    aleatorio = random.randint(0, len(numbers) - 1)
+    if contador < nr_numbers:
+        password.append(numbers[aleatorio])
+        contador += 1
+        
+contador = 0
 
-password = [caracter.append() for caracter in letters]
+for caracter in symbols:                                 # adiciona os simbolos a listas "password"
+    aleatorio = random.randint(0, len(symbols) - 1)
+    if contador < nr_symbols:
+        password.append(symbols[aleatorio])
+        contador += 1        
+
+random.shuffle(password)                                 # colocar todos os itens da lista de forma aleatória
+password = ''.join(password)                             # retirar as aspas entre os itens 
+print(password)
